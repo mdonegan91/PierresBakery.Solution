@@ -22,20 +22,3 @@ namespace Bakery.Tests
     }
   }
 }
-
-
-
-//     [TestMethod]
-//     public void TotalCost_ShouldReturnTotalCostOfOneLoafOfBread_PriceForOneLoaf()
-//     {
-//       Bread testBread = new Bread();
-//       Assert.AreEqual(5, testBread.TotalCost(1));
-//     }
-
-//     public void TotalCost_ShouldReturnTotalCostOfTwoLoafsOfBread_PriceForTwoLoafs()
-//     {
-//       Bread testBread = new Bread();
-//       Assert.AreEqual(5, testBread.TotalCost(2));
-//     }
-//   }
-// }
