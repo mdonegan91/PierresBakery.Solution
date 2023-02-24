@@ -9,7 +9,7 @@
 * dotnet script REPL
 
 ## Description
-An application that...
+A console application that...
 
 ### Setup Instructions
 
