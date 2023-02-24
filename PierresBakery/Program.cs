@@ -1,4 +1,5 @@
 using System;
+using System.Threading; 
 using PierresBakery.Models;
 
 namespace Bakery
@@ -7,17 +8,21 @@ namespace Bakery
   {
     static void Main()
     {
-      Console.WriteLine(@"    (  )   (   )  )");
-      Console.WriteLine(@"     ) (   )  (  (");
-      Console.WriteLine(@"     ( )  (    ) )");
-      Console.WriteLine(@"     _____________");
-      Console.WriteLine(@"    <_____________> ___");
-      Console.WriteLine(@"    |             |/ _ \");
-      Console.WriteLine(@"    |               | | |");
-      Console.WriteLine(@"    |               |_| |");
-      Console.WriteLine(@" ___|             |\___/");
-      Console.WriteLine(@"/    \___________/    \");
-      Console.WriteLine(@"\_____________________/");
+      for (int i = 0; i < 1; i++)
+        {
+            for (int j = 0; j < 10; j++)
+            {
+                Console.Clear();
+                var margin = "".PadLeft(j);
+      Console.WriteLine(margin + @"         (");
+      Console.WriteLine(margin + @"          )");
+      Console.WriteLine(margin + @"     __..---..__");
+      Console.WriteLine(margin + @" ,-='  /  |  \  `=-.");
+      Console.WriteLine(margin + @":--..___________..--;");
+      Console.WriteLine(margin + @" \.,_____________,./");
+      Thread.Sleep(100);
+            }
+        }
       Console.WriteLine("-------------------------------------------");
       Console.WriteLine("Welcome to Pierre's Bakery!");
       Console.WriteLine("-------------------------------------------");
@@ -40,7 +45,7 @@ namespace Bakery
         Console.WriteLine("-------------------------------------------");
         Console.WriteLine("Got it, " + loaf + " bread.");
         int breadTotal = newBread.TotalCost(loaf);
-        Console.WriteLine("Would you like to order pastries, too? [Yes/No]");
+        Console.WriteLine("Would you like to order pastries? [Yes/No]");
         string pastriesToo = (Console.ReadLine()).ToLower();
         if (pastriesToo == "no")
         {
@@ -58,11 +63,12 @@ namespace Bakery
           Console.WriteLine("-------------------------------------------");
           Console.WriteLine("Got it, " + fritter + " pastry.");
           int pastryTotal = newPastry.TotalCost(fritter);
-          Console.WriteLine("-------------------------------------------");
           Console.WriteLine("Your total today is: $" + (breadTotal + pastryTotal));
+          Console.WriteLine("Thank you for stopping by! Come again soon!");
+          Console.WriteLine("-------------------------------------------");
         }
       }
-      else if (placeOrder == "no")
+      else if (placeOrder != "yes")
       {
         Console.WriteLine("Thank you for visiting! Come again soon!");
         Console.WriteLine("-------------------------------------------");
