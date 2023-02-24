@@ -78,7 +78,7 @@ namespace Bakery
       else if (placeOrder != "yes")
       {
         Console.WriteLine("Thank you for visiting! Come again soon!");
-        Console.WriteLine("-------------------------------------------");
+        Console.WriteLine("------------------------------------------");
       }
     }
   }
