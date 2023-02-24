@@ -54,7 +54,7 @@ namespace Bakery
           int fritter = int.Parse(Console.ReadLine());
           Pastry newPastry = new Pastry();
           Console.WriteLine("-------------------------------------------");
-          Console.WriteLine("Got it, " + fritter + " pastry.");
+          Console.WriteLine("Got it, " + fritter + " pastry and " + loaf + " bread.");
           int pastryTotal = newPastry.TotalCost(fritter);
           Console.WriteLine("Your total today is: $" + (breadTotal + pastryTotal));
           Console.WriteLine("Thank you for stopping by! Come again soon!");
