@@ -11,7 +11,7 @@
 ## 🥖 Description 🥖
 A console application that allows users to to "buy" bread and pastries from a fictional bakery.
 
-### ☕ Setup Instructions ☕
+## ☕ Setup Instructions ☕
 
 1. Clone this repo.
 2. Install the [.NET 6 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
