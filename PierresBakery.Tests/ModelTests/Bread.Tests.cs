@@ -18,7 +18,7 @@ namespace Bakery.Tests
     public void TotalCost_ReturnCostOfTwoLoavesOfBread_PriceForTwoLoaves()
     {
       Bread newBread = new Bread();
-      Assert.AreEqual(5, newBread.TotalCost(2));
+      Assert.AreEqual(10, newBread.TotalCost(2));
     }
   }
 }
