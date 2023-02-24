@@ -21,7 +21,7 @@ A console application that allows users to to "buy" bread and pastries from a fi
 
 ## Known Bugs
 
-Unhandled exception: If user enters anything besides a whole number when prompted to enter a number, system will throw use out of the bakery.
+Unhandled exception: If user enters anything besides a whole number when prompted to enter a number, system will throw user out of the bakery.
 
 ## License
 Enjoy the site! If you have questions or suggestions for fixing the code, please contact me!
