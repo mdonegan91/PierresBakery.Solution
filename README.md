@@ -24,7 +24,7 @@ A console application that allows users to to "buy" bread and pastries from a fi
 Unhandled exception: If user enters anything besides a whole number when prompted to enter a number, system will throw user out of the bakery.
 
 ## ☕ License ☕
-Enjoy the site! If you have questions or suggestions for fixing the code, please contact me!
+Enjoy the app! If you have questions or suggestions for fixing the code, please contact me!
 
 MIT License Copyright (c) 2023 Molly Donegan. Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
