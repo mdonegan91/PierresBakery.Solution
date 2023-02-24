@@ -2,16 +2,16 @@
 
 #### By Molly Donegan
 
-## 🥐 Technologies Used 🥐
+## ☕ Technologies Used ☕
 
 * C# 
 * .NET 6.0 
 * dotnet script REPL 
 
-## ☕ Description ☕
+## 🥐 Description 🥐
 A console application that allows users to to "buy" bread and pastries from a fictional bakery.
 
-## 🥐 Setup Instructions 🥐
+## ☕ Setup Instructions ☕
 
 1. Clone this repo.
 2. Install the [.NET 6 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
@@ -19,11 +19,11 @@ A console application that allows users to to "buy" bread and pastries from a fi
 4. In the command line, run the command "dotnet run" to compile and execute the console application. Since this is a console application, you'll interact with it through text commands in your terminal.
 5. Optionally, you can run "dotnet build" to compile this console app without running it.
 
-## ☕ Known Bugs ☕
+## 🥐 Known Bugs 🥐
 
 Unhandled exception: If user enters anything besides a whole number when prompted to enter a number, system will throw user out of the bakery.
 
-## 🥐 License 🥐
+## ☕ License ☕
 Enjoy the site! If you have questions or suggestions for fixing the code, please contact me!
 
 MIT License Copyright (c) 2023 Molly Donegan. Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
