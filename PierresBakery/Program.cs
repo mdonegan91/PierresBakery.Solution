@@ -29,17 +29,30 @@ namespace Bakery
       Console.WriteLine("Bread: Buy 2, get 1 free.");
       Console.WriteLine("Pastry: Buy 3, get 1 free.");
       Console.WriteLine("-------------------------------------------");
-      Console.WriteLine("Would you like to place an order? (Yes/No):");
-      string yesNo = (Console.ReadLine()).ToLower();
-      if (yesNo == "yes")
+      Console.WriteLine("Would you like to place an order? [Yes/No]:");
+      string placeOrder = (Console.ReadLine()).ToLower();
+      if (placeOrder == "yes")
       {
+        Console.WriteLine("-------------------------------------------");
         Console.WriteLine("How many loaves of bread would you like?");
         int loaves = int.Parse(Console.ReadLine());
         Bread newBread = new Bread();
-        Console.WriteLine("Got it, " + loaves + " loaves of bread");
-      }else if (yesNo == "no")
+        Console.WriteLine("-------------------------------------------");
+        Console.WriteLine("Got it, " + loaves + " loaves of bread.");
+        int yourBreadTotal = newBread.TotalCost(loaves);
+        Console.WriteLine("Would you like to order pastries, too? [Yes/No]");
+        string pastriesToo = (Console.ReadLine()).ToLower();
+        if (pastriesToo == "no")
+        {
+          Console.WriteLine("-------------------------------------------");
+          Console.WriteLine("Your total today is: $" + yourBreadTotal);
+          Console.WriteLine("Thank you for stopping by! Come again soon!");
+          Console.WriteLine("-------------------------------------------");
+        }
+      }else if (placeOrder == "no")
       {
         Console.WriteLine("Thank you for visiting! Come again soon!");
+        Console.WriteLine("-------------------------------------------");
       }
     }
   }
