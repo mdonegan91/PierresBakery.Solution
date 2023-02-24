@@ -9,7 +9,7 @@
 * dotnet script REPL
 
 ## Description
-A console application that...
+A console application that allows users to to "buy" bread and pastries from a fictional bakery.
 
 ### Setup Instructions
 
