@@ -4,9 +4,9 @@
 
 ## ☕ Technologies Used ☕
 
-* 🍞 C#
-* 🍞 .NET 6.0
-* 🍞 dotnet script REPL
+* 🍞 C# 🍞
+* 🍞 .NET 6.0 🍞
+* 🍞 dotnet script REPL 🍞
 
 ## ☕ Description ☕
 A console application that allows users to to "buy" bread and pastries from a fictional bakery.
