@@ -47,13 +47,6 @@ namespace Bakery
         int breadTotal = newBread.TotalCost(loaf);
         Console.WriteLine("Would you like to order pastries? [Yes/No]");
         string pastriesToo = (Console.ReadLine()).ToLower();
-        if (pastriesToo == "no")
-        {
-          Console.WriteLine("-------------------------------------------");
-          Console.WriteLine("Your total today is: $" + breadTotal);
-          Console.WriteLine("Thank you for stopping by! Come again soon!");
-          Console.WriteLine("-------------------------------------------");
-        }
         if (pastriesToo == "yes")
         {
           Console.WriteLine("-------------------------------------------");
