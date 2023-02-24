@@ -39,7 +39,7 @@ namespace Bakery
       if (placeOrder == "yes")
       {
         Console.WriteLine("-------------------------------------------");
-        Console.WriteLine("How many loaves of bread would you like?");
+        Console.WriteLine("How many loaves of bread would you like? [Enter a number]");
         int loaf = int.Parse(Console.ReadLine());
         Bread newBread = new Bread();
         Console.WriteLine("-------------------------------------------");
@@ -57,7 +57,7 @@ namespace Bakery
         if (pastriesToo == "yes")
         {
           Console.WriteLine("-------------------------------------------");
-          Console.WriteLine("How many pastries would you like?");
+          Console.WriteLine("How many pastries would you like? [Enter a number]");
           int fritter = int.Parse(Console.ReadLine());
           Pastry newPastry = new Pastry();
           Console.WriteLine("-------------------------------------------");
