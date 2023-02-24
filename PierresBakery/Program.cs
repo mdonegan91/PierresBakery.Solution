@@ -60,7 +60,7 @@ namespace Bakery
           Console.WriteLine("Thank you for stopping by! Come again soon!");
           Console.WriteLine("-------------------------------------------");
         }
-        else if (pastriesToo != "yes")
+        if (pastriesToo != "yes")
         {
           Console.WriteLine("-------------------------------------------");
           Console.WriteLine("Your total today is: $" + breadTotal);
