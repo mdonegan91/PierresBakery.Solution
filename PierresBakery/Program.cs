@@ -35,21 +35,34 @@ namespace Bakery
       {
         Console.WriteLine("-------------------------------------------");
         Console.WriteLine("How many loaves of bread would you like?");
-        int loaves = int.Parse(Console.ReadLine());
+        int loaf = int.Parse(Console.ReadLine());
         Bread newBread = new Bread();
         Console.WriteLine("-------------------------------------------");
-        Console.WriteLine("Got it, " + loaves + " loaves of bread.");
-        int yourBreadTotal = newBread.TotalCost(loaves);
+        Console.WriteLine("Got it, " + loaf + " bread.");
+        int breadTotal = newBread.TotalCost(loaf);
         Console.WriteLine("Would you like to order pastries, too? [Yes/No]");
         string pastriesToo = (Console.ReadLine()).ToLower();
         if (pastriesToo == "no")
         {
           Console.WriteLine("-------------------------------------------");
-          Console.WriteLine("Your total today is: $" + yourBreadTotal);
+          Console.WriteLine("Your total today is: $" + breadTotal);
           Console.WriteLine("Thank you for stopping by! Come again soon!");
           Console.WriteLine("-------------------------------------------");
         }
-      }else if (placeOrder == "no")
+        if (pastriesToo == "yes")
+        {
+          Console.WriteLine("-------------------------------------------");
+          Console.WriteLine("How many pastries would you like?");
+          int fritter = int.Parse(Console.ReadLine());
+          Pastry newPastry = new Pastry();
+          Console.WriteLine("-------------------------------------------");
+          Console.WriteLine("Got it, " + fritter + " pastry.");
+          int pastryTotal = newPastry.TotalCost(fritter);
+          Console.WriteLine("-------------------------------------------");
+          Console.WriteLine("Your total today is: $" + (breadTotal + pastryTotal));
+        }
+      }
+      else if (placeOrder == "no")
       {
         Console.WriteLine("Thank you for visiting! Come again soon!");
         Console.WriteLine("-------------------------------------------");
