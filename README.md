@@ -18,6 +18,9 @@ A console application that allows users to to "buy" bread and pastries from a fi
 3. Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory called "PierresBakery".
 4. In the command line, run the command "dotnet run" to compile and execute the console application. Since this is a console application, you'll interact with it through text commands in your terminal.
 5. Optionally, you can run "dotnet build" to compile this console app without running it.
+6. Confirm all business logic tests pass with MSTest by running commands (not including the dollar symbol):
+`$ dotnet restore ./PierresBakery.Tests`
+`$ dotnet test ./PierresBakery.Tests`
 
 ## 🥐 Known Bugs 🥐
 
